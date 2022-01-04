@@ -1,2 +1,1 @@
-web: python demo.py
-worker: python demo.py 
+web: gunicorn --bind 0.0.0.0:$PORT demo:app
