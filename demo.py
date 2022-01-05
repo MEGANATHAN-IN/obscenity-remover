@@ -57,14 +57,13 @@ def home():
     badwords=[]
 
     with open('D:/python/Words.txt','r',encoding="utf8") as file:
-   
         for line in file:
        
             # reading each word        
             for word in line.split():   
                 badwords.append(word) 
         result=[word for word in lemmatized_words if word in badwords]
-        return " ".join(result)
+    return " ".join(result)
 
     
     
