@@ -3,3 +3,5 @@ pros_cons
 reuters
 corpus
 tokenize
+punkt
+stopwords
