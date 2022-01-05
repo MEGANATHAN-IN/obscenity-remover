@@ -4,6 +4,8 @@ app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
     
 def home():
+    import nltk
+    nltk.download('all')
     from nltk.tokenize import word_tokenize
     from nltk.tokenize import RegexpTokenizer
     teststr="hello! Mr Barath Nithish you are a, \"fuc.ker\" bastard "
@@ -35,7 +37,7 @@ def home():
 
     teststr = " ".join(tokenized_text)
     import nltk
-    nltk.download('punkt')
+    nltk.download('all')
 
     from nltk.tokenize import RegexpTokenizer
     tokenizer = RegexpTokenizer(r'\w+')
