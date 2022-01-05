@@ -31,7 +31,7 @@ def home():
             for word in line.split():   
                 badwords.append(word) 
         result=[word for word in sentence if word in badwords]
-    return " ".join(result)
+    return " ".join(li2)
 
     
     
