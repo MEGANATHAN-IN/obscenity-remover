@@ -20,7 +20,6 @@ def home():
         li3="".join(li3)
         li2.append(li3)
     print(li2)
-    sentence=" ".join(li2)
     badwords=[]
 
     with open('Words.txt','r',encoding="utf8") as file:
@@ -30,8 +29,8 @@ def home():
             # reading each word        
             for word in line.split():   
                 badwords.append(word) 
-        result=[word for word in sentence if word in badwords]
-    return " ".join(li2)
+        result=[word for word in li2 if word in badwords]
+    return " ".join(result)
 
     
     
