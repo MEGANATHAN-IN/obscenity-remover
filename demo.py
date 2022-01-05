@@ -2,13 +2,7 @@ from flask import Flask,request,send_from_directory
 import os
 app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/favicon.png')
 
-@app.route('/')
-@app.route('/home')
 def home():
     information = request.data
     #print()
