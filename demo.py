@@ -1,4 +1,5 @@
-from flask import Flask,request
+from flask import Flask,request,send_from_directory
+import os
 app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
 @app.route('/favicon.ico')
