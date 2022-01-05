@@ -23,7 +23,7 @@ def home():
     sentence=" ".join(li2)
     badwords=[]
 
-    with open('D:/python/Words.txt','r',encoding="utf8") as file:
+    with open('Words.txt','r',encoding="utf8") as file:
    
         for line in file:
        
